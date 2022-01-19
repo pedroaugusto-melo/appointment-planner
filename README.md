@@ -1,4 +1,4 @@
-# Jamming
+# Appointment Planner
 
 An appointment planner that include contacts and appointments.
 
