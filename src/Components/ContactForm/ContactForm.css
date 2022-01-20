@@ -1,0 +1,17 @@
+.ContactForm {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.25rem;
+}
+
+.ContactForm label {
+    margin-top: 0.75rem;
+}
+
+.ContactForm input {
+    padding: 0.25rem 0.5rem;
+}
+
+input[type='submit'] {
+    margin: 2rem 0;
+}
