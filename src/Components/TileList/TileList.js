@@ -1,15 +1,16 @@
 import PropTypes from 'prop-types';
+import { generateRandomKey } from '../../Utilities/Utilities';
 import { Tile } from '../Tile/Tile';
 import './TileList.css';
 
 export function TileList(props) {
-    const { contacts } = props;
+    const { list } = props;
 
     return (
         <ul className="TileList">
-            {contacts.map(contact => (
-                <li key={contact.name}>
-                    <Tile contact={contact} />
+            {list.map(item => (
+                <li key={generateRandomKey()}>
+                    <Tile contact={item} />
                 </li>
             ))}
         </ul>
@@ -17,5 +18,5 @@ export function TileList(props) {
 }
 
 TileList.propTypes = {
-    contacts: PropTypes.array.isRequired
+    list: PropTypes.array.isRequired
 };

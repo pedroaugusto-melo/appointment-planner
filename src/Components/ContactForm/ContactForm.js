@@ -2,8 +2,9 @@ import PropTypes from 'prop-types';
 import './ContactForm.css';
 
 export function ContactForm(props) {
-    const { name, phone, email,  
-            onChangeName, onChangePhone, onChangeEmail, onSubmit} = props;
+    const { name, phone, email } = props;  
+    const {onChangeName, onChangePhone, onChangeEmail} = props;
+    const {onSubmit} = props;
 
     const handleNameChange = ({ target }) => {
         onChangeName(target.value);

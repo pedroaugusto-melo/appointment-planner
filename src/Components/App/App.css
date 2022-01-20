@@ -21,6 +21,7 @@
 .NavBar .NavItem {
   color: #000000;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .NavBar .NavItem:hover {

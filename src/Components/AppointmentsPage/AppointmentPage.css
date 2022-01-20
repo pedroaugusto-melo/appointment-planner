@@ -1,0 +1,6 @@
+.AppointmentsPage {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    padding: 2rem 0 4rem 0;
+}

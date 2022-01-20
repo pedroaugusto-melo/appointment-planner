@@ -1,6 +1,7 @@
 import './App.css';
 import { useState } from 'react';
 import { Link, Routes, Route } from 'react-router-dom';
+import { Home } from '../Home/Home';
 import { ContactsPage } from '../ContactsPage/ContactsPage';
 import { AppointmentsPage } from '../AppointmentsPage/AppointmentsPage';
 
@@ -43,7 +44,7 @@ function App() {
 
       <main>
         <Routes>
-          <Route exact path="/" element={null}/>
+          <Route exact path="/" element={<Home />}/>
 
           <Route 
             path="/contacts" 

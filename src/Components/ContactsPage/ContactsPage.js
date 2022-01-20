@@ -48,18 +48,22 @@ export function ContactsPage(props) {
         <div className="Contacts">
             <h1>Contacts</h1>
             
-            <h2>Add New Contact</h2>
-            <ContactForm 
-                name={name}
-                phone={phone}
-                email={email}
-                onChangeName={onChangeName}
-                onChangePhone={onChangePhone}
-                onChangeEmail={onChangeEmail} 
-                onSubmit={onSubmit}/>
+            <section className='AddNewContact'>
+                <h2>Add New Contact</h2>
+                <ContactForm 
+                    name={name}
+                    phone={phone}
+                    email={email}
+                    onChangeName={onChangeName}
+                    onChangePhone={onChangePhone}
+                    onChangeEmail={onChangeEmail} 
+                    onSubmit={onSubmit}/>
+            </section>
 
-            <h2>Contact List</h2>
-            <TileList contacts={contacts}/>        
+            <section className='ContactList'>
+                <h2>Contact List</h2>
+                <TileList list={contacts}/>
+            </section>        
         </div>
     );
 }

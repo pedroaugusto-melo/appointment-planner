@@ -1,19 +1,19 @@
-.ContactForm {
+.AppointmentForm {
     display: flex;
     flex-direction: column;
-    row-gap: 0.25rem;
 }
 
-.ContactForm label {
-    margin-top: 0.75rem;
+.AppointmentForm label {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
-.ContactForm input {
+.AppointmentForm input {
     padding: 0.25rem 0.5rem;
 }
 
-input[type='submit'] {
-    margin: 2rem 0;
+input[type="submit"] {
+    margin-top: 3rem;
     border: 0;
     background-color: #000000;
     color: #FFFFFF;
